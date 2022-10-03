@@ -1,0 +1,20 @@
+.modalHistoria {
+    background-color: rgba(0, 0, 0, 0.816);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 2000;
+    padding-bottom: 207px;
+}
+
+.divBtnFecharModal{
+    height: 5px;
+}
+
+h2{
+    margin-top: 15px;
+}

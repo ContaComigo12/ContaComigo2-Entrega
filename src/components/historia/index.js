@@ -1,16 +1,22 @@
 import { useEffect, useState } from "react"
 import "./estilo.css"
 
-function Historia({ mostrarHistoria, subCategoria, idHistoria}) {
+function Historia({ mostrarHistoria, subCategoria, id }) {
 
-    const [id, setId] = useState(0)
+    const [idHistoria, setIdHistoria] = useState(0)
     const [titulo, setTitulo] = useState('')
     const [imagens, setImagens] = useState([])
     const servidorImagens = "http://localhost:8887/"
+    let endPoint = undefined
 
-        useEffect(() => {
-            if(subCategoria !== ""){
-                fetch(`http://localhost:8080/historia/subcategoria/${subCategoria}`, {
+    if(subCategoria !== undefined){
+        endPoint = `http://localhost:8080/historia/subcategoria/${subCategoria}`
+    }else if(id !== undefined){
+        endPoint = `http://localhost:8080/historia/${id}`
+    }
+
+    useEffect(() => {
+            fetch(endPoint, {
                 method: 'GET',
                 headers: {
                     'Content-type': 'application/json',
@@ -18,15 +24,12 @@ function Historia({ mostrarHistoria, subCategoria, idHistoria}) {
             })
                 .then((resp) => resp.json())
                 .then((data) => {
-                    setId(data.id)
+                    setIdHistoria(data.id)
                     setTitulo(data.titulo)
                     setImagens(data.imgsHistoria)
                 })
                 .catch((err) => console.log(err))
-            }else if(idHistoria !== ""){
-
-            }            
-        }, [id])    
+    }, [idHistoria, id, subCategoria, fetch])
 
     function comecar() {
         document.getElementById('btnComecar').hidden = true
@@ -54,7 +57,7 @@ function Historia({ mostrarHistoria, subCategoria, idHistoria}) {
                         <div className="col-12">
                         </div>
                         <div className="col-md-12" id="titulo-historia-sentimentos">
-                                <h2>{titulo}</h2>
+                            <h2>{titulo}</h2>
                             <div className="divBtnFecharModal">
                                 <button className="btn-fecharModal" data-target="#sentimentos-carousel" data-slide-to="0" type="button" data-dismiss="modal" aria-label="Close" onClick={mostrarHistoria}>
                                     <i className="fa fa-times" aria-hidden="true"></i>

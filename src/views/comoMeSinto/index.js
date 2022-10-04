@@ -56,7 +56,7 @@ function ComoMeSinto() {
                         <div className="row justify-content-center">
                             <div className="col-md-2">
                                 <div className="card">
-                                    <img className="select-img" src="./imagens/feliz.png" alt="feliz" />
+                                    <img className="select-img" src="./imagens/feliz.png" alt="feliz" onClick={mostrarHistoria}/>
                                     <div className="card-body">
                                         <h3>FELIZ</h3>
                                     </div>
@@ -64,7 +64,7 @@ function ComoMeSinto() {
                             </div>
                             <div className="col-md-2">
                                 <div className="card">
-                                    <img className="select-img" src="./imagens/cansado.png" alt="feliz" />
+                                    <img className="select-img" src="./imagens/cansado.png" alt="cansado" id="cansado" onClick={mostrarHistoria}/>
                                     <div className="card-body">
                                         <h3>CANSADO</h3>
                                     </div>
@@ -72,7 +72,7 @@ function ComoMeSinto() {
                             </div>
                             <div className="col-md-2">
                                 <div className="card">
-                                    <img className="select-img" src="./imagens/triste.png" alt="feliz" id="tristeza" onClick={mostrarHistoria} />
+                                    <img className="select-img" src="./imagens/triste.png" alt="triste" id="triste" onClick={mostrarHistoria}/>
                                     <div className="card-body">
                                         <h3>TRISTE</h3>
                                     </div>
@@ -80,7 +80,7 @@ function ComoMeSinto() {
                             </div>
                             <div className="col-md-2">
                                 <div className="card">
-                                    <img className="select-img" src="./imagens/empolgado.png" alt="feliz" />
+                                    <img className="select-img" src="./imagens/empolgado.png" alt="empolgado" id="empolgado" onClick={mostrarHistoria}/>
                                     <div className="card-body">
                                         <h3>EMPOLGADO</h3>
                                     </div>
@@ -90,7 +90,7 @@ function ComoMeSinto() {
                         <div className="row justify-content-center">
                             <div className="col-md-2">
                                 <div className="card">
-                                    <img className="select-img" src="./imagens/nervoso.png" alt="feliz" />
+                                    <img className="select-img" src="./imagens/nervoso.png" alt="nervoso" id="nervoso" onClick={mostrarHistoria}/>
                                     <div className="card-body">
                                         <h3>NERVOSO</h3>
                                     </div>
@@ -98,7 +98,7 @@ function ComoMeSinto() {
                             </div>
                             <div className="col-md-2">
                                 <div className="card">
-                                    <img className="select-img" src="./imagens/entediado.png" alt="feliz" />
+                                    <img className="select-img" src="./imagens/entediado.png" alt="entediado" id="entediado" onClick={mostrarHistoria}/>
                                     <div className="card-body">
                                         <h3>ENTEDIADO</h3>
                                     </div>

@@ -19,13 +19,13 @@ function NavBar() {
                             <Link to={"/comomesinto"} className="nav-item nav-link" id="comeMeSinto-menu">Como me sinto</Link>
                             <Link to={"#"} className="nav-item nav-link" id="meContaUmConto-menu">Me conta um conto</Link>
                             <Link to={"/desbravador"} className="nav-item nav-link" id="desbravador-menu">Desbravador</Link>
-                            <Link to={"#"} className="nav-item nav-link" id="perfil-menu">Meu Perfil</Link>
+                            {/* <Link to={"#"} className="nav-item nav-link" id="perfil-menu">Meu Perfil</Link> */}
                         </div>
                     </div>
-                    <div id="div-perfil">
+                    {/* <div id="div-perfil">
                         <img src="./imagens/perfil.png" className="nav-img" alt="Meu perfil" />
                         <h3>Meu perfil</h3>
-                    </div>
+                    </div> */}
                 </nav>
             </div>
         </header>

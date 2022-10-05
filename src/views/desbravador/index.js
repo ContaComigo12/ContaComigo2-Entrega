@@ -10,8 +10,6 @@ function Desbravador() {
     const [historias, setHistorias] = useState([])
     const [filtroHistorias, setFiltroHistorias] = useState()
     
-    const servidorImagens = "http://localhost:8887/"
-
     useEffect(() => {
         fetch('http://localhost:8080/historia/categoria/desbravador', {
             method: 'GET',
@@ -69,7 +67,7 @@ function Desbravador() {
                             </div>
                             {historias.map((historia) => (
                                 <div className={`col-md-4 box-desbravador ${historia.subcategoria}`} key={historia.id} id={historia.id} onClick={mostrarHistoria}>
-                                    <img src={servidorImagens + historia.imgsHistoria[0]} className="img-fluid" alt={historia.subcategoria} />
+                                    <img src={historia.imgsHistoria[0]} className="img-fluid" alt={historia.subcategoria} />
                                 </div>
 
                             ))}

@@ -6,7 +6,7 @@ function Historia({ mostrarHistoria, subCategoria, id }) {
     const [idHistoria, setIdHistoria] = useState(0)
     const [titulo, setTitulo] = useState('')
     const [imagens, setImagens] = useState([])
-    const servidorImagens = "http://localhost:8887/"
+    
     let endPoint = undefined
 
     if(subCategoria !== undefined){
@@ -29,7 +29,7 @@ function Historia({ mostrarHistoria, subCategoria, id }) {
                     setImagens(data.imgsHistoria)
                 })
                 .catch((err) => console.log(err))
-    }, [idHistoria, id, subCategoria, fetch])
+    }, [idHistoria, id, subCategoria, endPoint])
 
     function comecar() {
         document.getElementById('btnComecar').hidden = true
@@ -69,17 +69,17 @@ function Historia({ mostrarHistoria, subCategoria, id }) {
                                         {imagens.map((imagem, index, div = false) => (
                                             index === 0 ? (
                                                 <div div={div} className="carousel-item active primeiroItem" id="primeiro" key={index}>
-                                                    <img src={servidorImagens + imagem} alt={subCategoria} className="img-fluid" />
+                                                    <img src={imagem} alt={subCategoria} className="img-fluid" />
                                                 </div>
 
                                             ) : index === imagens.length - 1 ? (
                                                 <div div={div} className="carousel-item ultimoItem" id="ultimo" key={index}>
-                                                    <img src={servidorImagens + imagem} alt={subCategoria} className="img-fluid" />
+                                                    <img src={imagem} alt={subCategoria} className="img-fluid" />
                                                 </div>
 
                                             ) : (
                                                 <div div={div} className="carousel-item" key={index}>
-                                                    <img src={servidorImagens + imagem} alt={subCategoria} className="img-fluid" />
+                                                    <img src={imagem} alt={subCategoria} className="img-fluid" />
                                                 </div>
                                             )
                                         ))}

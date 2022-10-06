@@ -11,7 +11,7 @@ function Desbravador() {
     const [filtroHistorias, setFiltroHistorias] = useState()
     
     useEffect(() => {
-        fetch('http://localhost:8080/historia/categoria/desbravador', {
+        fetch('https://contacomigo-api.herokuapp.com/historia/categoria/desbravador', {
             method: 'GET',
             headers: {
                 'Content-type': 'application/json',

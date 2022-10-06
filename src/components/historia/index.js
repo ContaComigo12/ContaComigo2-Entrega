@@ -10,9 +10,9 @@ function Historia({ mostrarHistoria, subCategoria, id }) {
     let endPoint = undefined
 
     if(subCategoria !== undefined){
-        endPoint = `http://localhost:8080/historia/subcategoria/${subCategoria}`
+        endPoint = `https://contacomigo-api.herokuapp.com/historia/subcategoria/${subCategoria}`
     }else if(id !== undefined){
-        endPoint = `http://localhost:8080/historia/${id}`
+        endPoint = `https://contacomigo-api.herokuapp.com/historia/${id}`
     }
 
     useEffect(() => {

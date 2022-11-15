@@ -1,4 +1,7 @@
 /* Geral */
+main{
+    min-height: 70vh;
+}
 
 *{
     font-family: mouse memoirs, sans-serif;
@@ -112,6 +115,7 @@ body{
     padding: 15px;
     text-align: center;
     transition: 0.3s;
+    margin-right: 30px;
 }
 
 #perfil-menu{
@@ -124,15 +128,21 @@ body{
     text-decoration-thickness: 1px;
 }
 
+.logoLink{
+    width: 100px;
+}
+
 #logo, #div-perfil{
     text-align: center;
     color: #FFF;
+    width: 100px;
+    margin-right: -70px;
 }
-
 
 .nav-img{
     height: 100px;
 }
+
 
 /* Emoções */
 
@@ -326,6 +336,8 @@ body{
 #desbravador img{
     margin: 20px;
     transition: 0.5s;
+    height: 350px;
+    width: 350px;
 }
 
 #desbravador img:hover{

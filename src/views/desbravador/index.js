@@ -63,7 +63,7 @@ function Desbravador() {
                                 <button className="main-btn filterSelect" id="cultura" onClick={filtrarHistorias}>Cultura</button>
                                 <button className="main-btn filterSelect" id="artes" onClick={filtrarHistorias}>Artes</button>
                                 <button className="main-btn filterSelect" id="curiosidades" onClick={filtrarHistorias}>Curiosidades</button>
-                                <button className="main-btn filterSelect" id="manual" onClick={filtrarHistorias}>Manuais</button>
+                                <button className="main-btn filterSelect" id="manuais" onClick={filtrarHistorias}>Manuais</button>
                             </div>
                             {historias.map((historia) => (
                                 <div className={`col-md-4 box-desbravador ${historia.subcategoria}`} key={historia.id} id={historia.id} onClick={mostrarHistoria}>

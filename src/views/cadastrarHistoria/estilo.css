@@ -1,6 +1,240 @@
 .main{
     display: flex;
+    justify-content: center;    
+    width: 100%;
+    margin-top: 220px;
+}
+
+.divAguardando{
+    position: fixed;
+    margin-top: 10%;
+    background-color: yellow;
+}
+
+.formHistoria{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.lblTitulo{
+    font-size: 40px;
+    margin-right: 10px;
+    display: block;
+}
+
+.inputTitulo{
+    width: 100%;
+    font-size: 30px;
+    background-color: #f5f5f5;
+    border: 2px solid #999;
+    color: #683266;
+    border-radius: 10px;
+    transition: 0.4s all linear;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.inputTitulo:focus{
+    outline: none;
+    background-color: #683266;
+    color: #FFF;
+    border: 2px solid #32092d;
+}
+
+.inputTitulo:focus::placeholder{    
+    color: transparent;
+}
+
+.inputTitulo:not(:placeholder-shown) {
+    background-color: #683266;
+    color: #FFF;
+  }
+
+.divContentRadio{
+    margin-top: 5%;
+    text-align: space-around;
+    display: flex;
+    justify-content: space-evenly;
+    vertical-align: middle;
+}
+
+.historiaRadio {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  
+    border: 2px solid #683266;
+    transition: 0.2s all linear;
+    margin-right: 5px;
+}
+
+.historiaRadio:checked {
+    border: 8px solid #683266;
+  }
+
+.lblRadio{
+    font-size: 30px;
+    color: #683266;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: super;
+}
+
+.divSelectTema{
+    margin-top: 2%;
+}
+
+#selectTema {
+    width: 100%;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 10px;
+    color: #FFF;
+    background-color: #683266;
+    appearance:none;
+    
+    background-image:
+      linear-gradient(45deg, transparent 50%, #f5f5f5 50%),
+      linear-gradient(135deg, #f5f5f5 50%, transparent 50%),
+      linear-gradient(to right, #683266, #683266);
+    background-position:
+      calc(100% - 20px) calc(0.75em),
+      calc(100% - 15px) calc(0.75em),
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      1.5em;
+    background-repeat: no-repeat;
+  }
+
+#selectTema option{
+    background-color: #FFF;
+    color: #683266;
+}
+
+#selectTema.selectNone{
+    background-color: #f5f5f5;
+    color: gray;
+    background-image:
+      linear-gradient(45deg, transparent 50%, #f5f5f5 50%),
+      linear-gradient(135deg, #f5f5f5 50%, transparent 50%),
+      linear-gradient(to right, gray, gray);
+}
+
+#selectTema .optionNone{
+    color: gray;
+}
+
+#selectTema .options:checked{ 
+    background-color: #683266;
+    color: #FFF; 
+}
+
+.historiaRadio,
+.lblRadio,
+#selectTema{
+    cursor: pointer;
+}
+
+.divUpload{
+    margin-top: 3%;
     justify-content: center;
-    margin-top: 200px;
-    margin-bottom: 200px;
+    display: block;
+    text-align: center;
+    justify-items: center;
+}
+
+.inputImg{
+    display: none;
+}
+
+.lblImagem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 140px;
+    background-color: #f5f5f5;
+    color: gray;
+    border: 1px dashed;
+    font-size: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+    text-transform: uppercase;
+}
+
+.lblImagem:hover{
+    background-color: #683266;
+    color: #FFF;
+}
+
+.divUpload span{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.previewPagina{
+    height: 100%;
+    width: 100%;
+}
+
+.previewPagina[alt] {  
+    line-height: 130px;
+  }
+
+.btnRemove{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    background-color: #FFF;
+}
+
+.btnRemove:focus{
+    outline: none;
+}
+
+.iconRemove{
+    font-size: 22px;
+    color: #683266;
+    transition: 0.1s;  
+}
+
+.btnRemove:hover .iconRemove{
+    scale: 1.2;
+}
+
+.divBtns{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    justify-content: space-evenly;
+}
+
+.btnSalvar,
+.btnCancelar{
+    color: #FFF;
+    height: 50px;
+    width: 100px;
+    font-size: 30px;
+    border-radius: 15px;
+    background-color: #683266;
+    cursor: pointer;
+    border: 2px solid #683266;
+    transition: 0.5s;
+}
+
+.btnSalvar:hover,
+.btnCancelar:hover{
+    color: #683266;
+    background-color: #FFF;
 }

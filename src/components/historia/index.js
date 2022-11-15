@@ -1,22 +1,23 @@
 import { useEffect, useState } from "react"
 import "./estilo.css"
+import env from "../../../src/env.json"
 
 function Historia({ mostrarHistoria, subCategoria, id }) {
 
-    const [idHistoria, setIdHistoria] = useState(0)
     const [titulo, setTitulo] = useState('')
     const [imagens, setImagens] = useState([])
-    
+
     let endPoint = undefined
 
     if(subCategoria !== undefined){
-        endPoint = `https://contacomigo-api.herokuapp.com/historia/subcategoria/${subCategoria}`
+        endPoint = `${env.baseUrl}/historia/subcategoria/${subCategoria}`
     }else if(id !== undefined){
-        endPoint = `https://contacomigo-api.herokuapp.com/historia/${id}`
+        endPoint = `${env.baseUrl}/historia/${id}`
     }
 
     useEffect(() => {
-            fetch(endPoint, {
+        console.log("fetch")
+            fetch(endPoint, {                
                 method: 'GET',
                 headers: {
                     'Content-type': 'application/json',
@@ -24,12 +25,11 @@ function Historia({ mostrarHistoria, subCategoria, id }) {
             })
                 .then((resp) => resp.json())
                 .then((data) => {
-                    setIdHistoria(data.id)
                     setTitulo(data.titulo)
                     setImagens(data.imgsHistoria)
                 })
                 .catch((err) => console.log(err))
-    }, [idHistoria, id, subCategoria, endPoint])
+    }, [endPoint])
 
     function comecar() {
         document.getElementById('btnComecar').hidden = true

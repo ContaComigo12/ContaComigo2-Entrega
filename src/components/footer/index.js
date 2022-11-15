@@ -7,12 +7,11 @@ function Footer() {
                 <div className="f-box-links">
                     <h4>Sobre nós</h4>
                     <Link to={"/sobrenos"}><p>Quem somos</p></Link>
-                    {/* <Link to={"/cadastrarHistoria"}><p>Cadastrar História</p></Link> */}
                 </div>
                 <div className="f-box-projetos">
-                    <h4>Parcerias</h4>
-                    <p>Contato</p>
-                </div>
+                    <h4>Gerenciar</h4>
+                    <Link to={"/gerenciarHistoria"}><p>Histórias</p></Link>
+                    </div>
                 <div className="f-box-social">
                     <h4>Social</h4>
                     <div className="logos">

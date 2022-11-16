@@ -6,26 +6,61 @@
     left: 0;
     right: 0;
     z-index: 2000;
-    display: flex;
-    justify-content: center;
-    padding-top: 25%;
+    padding-top: 20%;
     background-color: rgba(0, 0, 0, 0.500);
 }
 
-.btnDivConfirmar{
-    height: 50px;
+.divBtnConfirmar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
     background-color: #683266;
+}
+
+.btnConfirmar,
+.btnCancelar{
+    align-items: center;
+    height: 50px;
     color: #FFF;
     text-transform: uppercase;
     text-align: center;
     border-radius: 15px;
     font-size: 25px;
-    border: 2px solid #683266;
+    border: 2px solid #32092d;
     transition: 0.5s;
+    width: 100px;
+    cursor: pointer;
+    margin-bottom: 20px;
 }
 
-.btnDivConfirmar:hover{
-    background-color: #FFF;
-    color: #683266;
-    cursor: pointer;
+.btnConfirmar{
+    background-color: #155724;
+}
+
+.divConfirmar .btnCancelar{
+    background-color: #721C24;
+}
+
+.btnConfirmar:hover{
+    background-color: #D4EDDA;
+    color: #155724;
+}
+
+.divConfirmar .btnCancelar:hover{
+    background-color: #F8D7DA;
+    color: #721C24;
+}
+
+.txtConfirmar{
+    font-size: 70px;
+    color: #FFF;
+    text-shadow: 
+        -1px -1px 0px #32092d, 
+        -1px 1px 0px #32092d,      
+        1px -1px 0px #32092d,    
+        1px 0px 0px #32092d;
+        background-color: #683266;
+    text-align: center;
+    text-align: center;
+    margin: 0;
 }

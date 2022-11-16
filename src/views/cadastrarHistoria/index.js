@@ -134,7 +134,7 @@ function CadastrarHistoria({ comoMeSintoOptions, desbravadorOptions }) {
             const newImages = [...imgs]
             for (let i = 0; i < editImgs.length; i++) {
                 if (imgs[i] === editImgs[i]) {
-                    if (imgs[i] !== "") {
+                    if (imgs[i] !== "vazio") {
                         fetch(`${imgs[i]}`)
                             .then(resp => resp.blob())
                             .then(blob => {

@@ -16,7 +16,6 @@
 
 .equipe-nomes{
     height: 15%;
-    margin-top: 20px;
     color: #FFF;
     font-size: 50px;
     text-decoration: underline;
@@ -35,6 +34,7 @@
 .divSobreMim h5{
     font-size: 20px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .fotoLinhaPar{
@@ -70,4 +70,49 @@
 .redesLinhaPar{
     display: flex;    
     justify-content: space-evenly;
+}
+
+@media(max-width: 1200px){
+    .divSobreMim h5{
+        font-size: 17px;
+    }
+}
+
+@media(max-width: 992px){
+    .ml-5, .mx-5 {
+        margin-left: 2rem!important;
+    }
+
+    .divSobreMim h5{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 768px){
+    .ml-5, .mx-5 {
+        margin-left: 1.7rem!important;
+    }
+}
+
+@media(max-width: 600px){
+    .ml-5, .mx-5 {
+        margin-left: 1.5rem!important;
+    }
+}
+
+@media(max-width: 486px){
+    .divSobreMim h5{
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 426px){
+
+    .equipe-nomes{
+        font-size: 2rem;
+    }
+
+    .divSobreMim h5{
+        font-size: 8px;
+    }
 }

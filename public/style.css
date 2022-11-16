@@ -870,8 +870,7 @@ footer p:hover{
 @media(max-width: 1430px){
 
     #equipe img{
-        height: 300px;
-        width: 300px;        
+        height: 300px;       
     }
 
     #div-sobre h2.txt-sobre{
@@ -889,11 +888,10 @@ footer p:hover{
 
     #equipe img{
         height: 300px;
-        width: 300px;        
     }
 
     #div-sobre h2.txt-sobre{
-        font-size: 25px;        
+        font-size: 20px;        
     }
 
 }
@@ -908,20 +906,12 @@ footer p:hover{
         width: 33%;
         justify-content: center;
     }
-    
-    #equipe img{
-        height: 220px;
-        width: 220px;   
-    }
-
-
 }
 
 @media(max-width: 426px){
     
     #equipe img{
-        height: 150px;
-        width: 150px;        
+        height: 150px;      
     }
 
 }
@@ -930,7 +920,6 @@ footer p:hover{
     
     #equipe img{
         height: 130px;
-        width: 130px;        
     }
 
 }
@@ -941,11 +930,6 @@ footer p:hover{
         font-size: 30px;
     }
 
-    #equipe img{
-        height: 100px;
-        width: 100px;        
-    }
-
     #div-sobre h2.txt-sobre{
         font-size: 17px;        
     }
@@ -954,4 +938,10 @@ footer p:hover{
         font-size: 20px;
     }
 
+}
+
+@media(max-width: 415px){
+    .divSobreMim h5 {
+        font-size: 7px;
+    }
 }

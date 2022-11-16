@@ -59,7 +59,7 @@ function Desbravador() {
                             </div>
                             <div className="col-md-12" id="box-btn-desbravador">
                                 <button className="main-btn filterSelect ativo" id="todos" onClick={filtrarHistorias}>Todos</button>
-                                <button className="main-btn filterSelect" id="ciencia" onClick={filtrarHistorias}>Ciencias</button>
+                                <button className="main-btn filterSelect" id="ciencias" onClick={filtrarHistorias}>Ciencias</button>
                                 <button className="main-btn filterSelect" id="cultura" onClick={filtrarHistorias}>Cultura</button>
                                 <button className="main-btn filterSelect" id="artes" onClick={filtrarHistorias}>Artes</button>
                                 <button className="main-btn filterSelect" id="curiosidades" onClick={filtrarHistorias}>Curiosidades</button>

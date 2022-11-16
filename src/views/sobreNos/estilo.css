@@ -1,0 +1,73 @@
+.divEquipe{
+    display: flex;
+    background-color: #683266;
+    border: 3px solid #32092d;
+    border-radius: 10px;
+}
+
+.divFoto{
+    width: 40%;
+}
+
+.divSobreIndividual{
+    width: 60%;
+    justify-content: center;
+}
+
+.equipe-nomes{
+    height: 15%;
+    margin-top: 20px;
+    color: #FFF;
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+.divSobreMim{
+    display: block;
+    text-align: justify;
+    margin-top: 20px;
+    background-color: #FFF;
+    height: 70%;
+    border-radius: 10px;
+    padding-top: 10px;
+}
+
+.divSobreMim h5{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.fotoLinhaPar{
+    display: block;
+    justify-content: end;
+}
+
+.divRedes{
+    background-color: #FFF;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.divRedes i{
+    font-size: 30px;
+    color: #683266;
+}
+
+.divRedes i:hover{
+    color: #32092d;
+}
+
+.divRedesLinhaPar{
+    display: block;
+}
+
+.redesLinhaPar{
+    display: flex;    
+    justify-content: space-evenly;
+}

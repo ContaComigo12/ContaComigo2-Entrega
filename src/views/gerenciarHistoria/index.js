@@ -162,7 +162,7 @@ function GerenciarHistoria({ comoMeSintoOptions, desbravadorOptions }) {
                                 <div className="col-12 divTituloHistoria">
                                     <h3>{historia.titulo}</h3>
                                 </div>
-                                <div className="col-12 divBtns">
+                                <div className="col-12 divBtnsGerenciar">
                                     <Link className='logoLink' to={`/cadastrarHistoria/${historia.id}`}>
                                         <button type="button" className="btnsGerenciarHistoria">
                                             <i className="fa-solid fa-pencil iconBtn" />

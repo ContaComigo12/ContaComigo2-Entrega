@@ -420,7 +420,6 @@ footer p{
 
 footer p:hover{
     color: #b184b1;
-    font-size: 1.4rem;
 }
 
 .f-box-links, .f-box-projetos {
@@ -454,9 +453,12 @@ footer p:hover{
 }
 
 #equipe img{
-    border-radius: 50%;
+    margin-top: 10px;
     height: 400px;
-    width: 400px;
+    width: 90%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 5px solid #FFF;
     
 }
 
@@ -502,6 +504,12 @@ footer p:hover{
 
 @media(max-width: 1430px){
 
+    /*Navbar*/
+
+    #navbar-links a{
+        font-size: 40px;
+    }
+
     /*Footer*/
 
     footer h4{
@@ -510,6 +518,10 @@ footer p:hover{
 
     .f-box-social i {
         font-size: 2.5vw;
+    }
+
+    footer p{
+        font-size: 1rem;
     }
 }
 
@@ -551,7 +563,7 @@ footer p:hover{
 
 }
 
-@media(max-width: 768px){
+@media(max-width: 767px){
 
     /*navbar*/
 
@@ -562,21 +574,36 @@ footer p:hover{
     /*Slider*/
 
     #mainSlider .carousel-item{
-        height: 250px;
+        height: 350px;
     }
 
     /*Atividades*/
+
+    .col-md-4{
+        display: block;
+        margin-right: 50px;
+        margin-bottom: 100px;
+    }
 
     .face{
         margin: 0% 0% 80% 10%;
     }
 
     .card img{
-        width: 300px;
+        width: 100%;
+        margin: 0;
+    }
+
+    .card:focus{
+        border: none;
+    }
+
+    .frente:hover img{
+        transform: scale(1);
     }
 
     #frase{
-        margin: 50px 0px 50px 0px;
+        margin: 100px 0px 50px 0px;
     }
 
     /*Footer*/
@@ -586,14 +613,11 @@ footer p:hover{
     }
 }
 
-@media(max-width: 415px){
+@media(max-width: 426px){
 
-    /*Atividades*/
-
-    .card img{
-        width: 250px;
+    #frase{
+        margin: 50px 0px 50px 0px;
     }
-
 }
 
 @media(max-width: 365px){
@@ -606,8 +630,8 @@ footer p:hover{
 
     /*Atividades*/
 
-    .card img{
-        width: 220px;
+    .frente:hover img{
+        transform: scale(1);
     }
 
     /*Footer*/
@@ -646,10 +670,11 @@ footer p:hover{
 
     .btn-fecharModal{
         color: #32092d;
+        font-size: 20px;
+        left: 85%;
     }
 
     .modal-content{
-        left: 20%;
         height:500px;
         width: 500px;
     }
@@ -664,6 +689,10 @@ footer p:hover{
         font-size: 20px;
     }
 
+    h2{
+        font-size: 1.5rem;
+    }
+
 }
 
 @media(max-width: 1014px){
@@ -673,7 +702,6 @@ footer p:hover{
     .modal-content{
         width: 500px;
         height: 500px;
-        left: 0%;
     }
 
     /*Emoções*/
@@ -712,12 +740,16 @@ footer p:hover{
     }
 
     .btn-fecharModal{
-        top: 2%;
+        top: 0%;
+    }
+
+    h2{
+        font-size: 1.3rem;
     }
 
 }
 
-@media(max-width: 365px){
+@media(max-width: 376px){
 
     /*Emoções*/
 
@@ -737,14 +769,23 @@ footer p:hover{
      }
  
      .btn-fecharModal{
-         left: 80%;
-         top: 10%;
+         left: 83%;
      }
  
      .modal-content{
          height:400px;
      }
 
+     h2{
+        font-size: 1rem;
+     }
+
+}
+
+@media(max-width: 321px){
+    h2{
+        font-size: 1rem;
+    }
 }
 
 /*Desbravador*/
@@ -772,6 +813,12 @@ footer p:hover{
     .box-desbravador .img-fluid{
         height: 250px;
     }
+
+    #desbravador img{
+        height: 200px;
+        width: 200px;
+        margin: 0 0 10px 0;
+    }
 }
 
 @media(max-width: 768px){
@@ -782,10 +829,6 @@ footer p:hover{
 
     .box-desbravador .img-fluid{
         height: 200px;
-    }
-
-    #desbravador img{
-        margin: 0 0 10px 0;
     }
 
     .col-md-4.box-desbravador{
@@ -807,6 +850,18 @@ footer p:hover{
 @media(max-width: 365px){
     #modal-desbravador{
         height: 360px;
+    }
+
+    #desbravador img{
+        height: 180;
+        width: 180;
+    }
+}
+
+@media(max-width: 320px){
+    #desbravador img{
+        height: 150px;
+        width: 150px;
     }
 }
 

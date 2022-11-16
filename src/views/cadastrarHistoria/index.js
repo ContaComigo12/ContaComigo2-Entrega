@@ -213,7 +213,13 @@ function CadastrarHistoria({ comoMeSintoOptions, desbravadorOptions }) {
         }        
 
         fetch(`${env.baseUrl}/historia/`, requestOptions)
-            .then(response => response.text())
+            .then(response => {
+                if(!response.ok){
+                    console.log(response.status)
+                    setMessage(`ERRO, servidor fora do ar!`)
+                    return Promise.reject()
+                }
+            })
             .then(() => {
                 setAguardando(false)
                 navigate('/gerenciarHistoria', { state: { message: 'Salvo Com Sucesso!' } })

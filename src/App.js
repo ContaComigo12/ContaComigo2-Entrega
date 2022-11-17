@@ -10,6 +10,7 @@ const Desbravador = lazy(() => import('./views/desbravador'))
 const SobreNos = lazy(() => import('./views/sobreNos'))
 const CadastrarHistoria = lazy(() => import('./views/cadastrarHistoria'))
 const GerenciarHistoria = lazy(() => import('./views/gerenciarHistoria'))
+const MeContaUmConto = lazy(() => import('./views/meContaUmConto'))
 
 function App() {
 
@@ -47,6 +48,11 @@ function App() {
           <Route path={"cadastrarHistoria"} element={
             <Suspense fallback={<p>"Carregando...</p>}>
               <CadastrarHistoria comoMeSintoOptions={comoMeSintoOptions} desbravadorOptions={desbravadorOptions}/>
+            </Suspense>}
+          />
+          <Route path={"meContaUmConto"} element={
+            <Suspense fallback={<p>"Carregando...</p>}>
+              <MeContaUmConto />
             </Suspense>}
           />
           <Route path={"cadastrarHistoria/:id"} element={

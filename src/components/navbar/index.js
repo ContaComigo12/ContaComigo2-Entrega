@@ -17,7 +17,7 @@ function NavBar() {
                     <div className="collapse navbar-collapse justify-content-around" id="navbar-links">
                         <div className="navbar-nav">
                             <Link to={"/comomesinto"} className="nav-item nav-link" id="comeMeSinto-menu" data-toggle="collapse" data-target="#navbar-links.show">Como me sinto</Link>
-                            <Link to={"#"} className="nav-item nav-link" id="meContaUmConto-menu" data-toggle="collapse" data-target="#navbar-links.show">Me conta um conto</Link>
+                            <Link to={"/meContaUmConto"} className="nav-item nav-link" id="meContaUmConto-menu" data-toggle="collapse" data-target="#navbar-links.show">Me conta um conto</Link>
                             <Link to={"/desbravador"} className="nav-item nav-link" id="desbravador-menu" data-toggle="collapse" data-target="#navbar-links.show">Desbravador</Link>
                             {/* <Link to={"#"} className="nav-item nav-link" id="perfil-menu">Meu Perfil</Link> */}
                         </div>

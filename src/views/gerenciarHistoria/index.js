@@ -27,6 +27,7 @@ function GerenciarHistoria({ comoMeSintoOptions, desbravadorOptions }) {
         if (location.state) {
             setTypeMessage("success")
             setMessage(location.state.message)
+            setLogado(true)
         }
     }, [location.state])
 

@@ -7,10 +7,10 @@ function SobreNos() {
         // Equipe
         <main>
             <div id="equipe">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
-                            <h2 className="main-title">Equipe</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2 class="main-title">Equipe</h2>
                         </div>
                         <div className="container divEquipe">
                             <div className="divFoto">
@@ -25,7 +25,7 @@ function SobreNos() {
                                 </div>
                             </div>
                             <div className="divSobreIndividual">
-                                <h4 className="equipe-nomes">Greice</h4>
+                                <h4 class="equipe-nomes">Greice</h4>
                                 <div className='divSobreMim'>
                                     <h5>
                                         Estudante de Desenvolvimento Front-End com foco na linguagem de programação<br />
@@ -41,7 +41,7 @@ function SobreNos() {
                         </div>
                         <div className="container divEquipe mt-5">
                             <div className="divSobreIndividual">
-                                <h4 className="equipe-nomes">Davi</h4>
+                                <h4 class="equipe-nomes">Davi</h4>
                                 <div className='divSobreMim'>
                                     <h5>
                                         Sou uma pessoa determinada, curiosa e apaixonada por tecnologia.<br />
@@ -74,14 +74,14 @@ function SobreNos() {
             </div>
             {/* Frase */}
             <div id="div-sobre">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12" id="sobre-title">
-                            <h2 className="main-title">Sobre nós</h2>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12" id="sobre-title">
+                            <h2 class="main-title">Sobre nós</h2>
                         </div>
                     </div>
-                    <div className="col-md-12">
-                        <h2 className="txt-sobre">
+                    <div class="col-md-12">
+                        <h2 class="txt-sobre">
                             "Acreditamos no hábito de leitura como potência de transformação social e individual
                             e nosso propósito é facilitar que essa habilidade seja desenvolvida, desde cedo,
                             no cotidiano das crianças para florescer firme, forte e de forma duradoura.

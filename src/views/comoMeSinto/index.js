@@ -56,7 +56,7 @@ function ComoMeSinto() {
                         <div className="row justify-content-center">
                             <div className="col-md-2">
                                 <div className="card">
-                                    <img className="select-img" src="./imagens/feliz.png" alt="feliz" id="feliz" onClick={mostrarHistoria}/>
+                                    <img className="select-img" src="./imagens/feliz.png" alt="feliz" onClick={mostrarHistoria}/>
                                     <div className="card-body">
                                         <h3>FELIZ</h3>
                                     </div>

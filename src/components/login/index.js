@@ -52,7 +52,7 @@ function Login({setLogado}){
                                     </div>
                                 </form>
                             </div>
-                            <div className="modal-footer justify-content-around">
+                            <div className="modal-login-footer justify-content-around">
                                 <button type="button" className="main-btn modal-btn" aria-label="Login" onClick={logar}>Login</button>
                                 <h6 onClick={() => { setLogado(false); limpar() }}><Link to="/" >Cancelar</Link></h6>
                             </div>

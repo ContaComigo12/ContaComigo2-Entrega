@@ -13,33 +13,6 @@ function SobreNos() {
                             <h2 class="main-title">Equipe</h2>
                         </div>
                         <div className="container divEquipe">
-                            <div className="divFoto">
-                                <img src="./imagens/Equipe/greice.jpeg" alt="Integrante 1" />
-                                <div className='divRedes'>
-                                    <a href='https://www.linkedin.com/in/greici-caroline-opolenski-758422217/?originalSubdomain=br'>
-                                        <i className="fa fa-linkedin" aria-hidden="true"></i>
-                                    </a>
-                                    <Link to={"#"}>
-                                        <i className="fa fa-github" aria-hidden="true"></i>
-                                    </Link>
-                                </div>
-                            </div>
-                            <div className="divSobreIndividual">
-                                <h4 class="equipe-nomes">Greice</h4>
-                                <div className='divSobreMim'>
-                                    <h5>
-                                        Estudante de Desenvolvimento Front-End com foco na linguagem de programação<br />
-                                        JavaScript e a biblioteca React.<br /><br />
-                                        .HTML5<br />
-                                        .CSS3<br />
-                                        .GIT E GITHUB<br />
-                                        .JAVASCRIPT<br />
-                                        .REACT<br />
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="container divEquipe mt-5">
                             <div className="divSobreIndividual">
                                 <h4 class="equipe-nomes">Davi</h4>
                                 <div className='divSobreMim'>
@@ -66,6 +39,33 @@ function SobreNos() {
                                         <i className="fa fa-github" aria-hidden="true"></i>
                                     </a>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="container divEquipe mt-5">
+                            <div className="divFoto">
+                                <img src="./imagens/Equipe/greice.jpeg" alt="Integrante 1" />
+                                <div className='divRedes'>
+                                    <a href='https://www.linkedin.com/in/greici-caroline-opolenski-758422217/?originalSubdomain=br'>
+                                        <i className="fa fa-linkedin" aria-hidden="true"></i>
+                                    </a>
+                                    <Link to={"#"}>
+                                        <i className="fa fa-github" aria-hidden="true"></i>
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className="divSobreIndividual">
+                                <h4 class="equipe-nomes">Greice</h4>
+                                <div className='divSobreMim'>
+                                    <h5>
+                                        Estudante de Desenvolvimento Front-End com foco na linguagem de programação<br />
+                                        JavaScript e a biblioteca React.<br /><br />
+                                        .HTML5<br />
+                                        .CSS3<br />
+                                        .GIT E GITHUB<br />
+                                        .JAVASCRIPT<br />
+                                        .REACT<br />
+                                    </h5>
                                 </div>
                             </div>
                         </div>

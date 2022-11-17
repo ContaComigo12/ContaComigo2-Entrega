@@ -7,10 +7,12 @@ import env from '../../env.json'
 import Message from "../../components/message"
 import Loading from '../../components/loading'
 import Confirmar from '../../components/confirmar'
+import Login from '../../components/login';
 
 
 function GerenciarHistoria({ comoMeSintoOptions, desbravadorOptions }) {
 
+    const [logado, setLogado] = useState(false)
     const [historias, setHistorias] = useState([{}])
     const [filterHistoria, setFilterHistoria] = useState([{}])
     const [categoria, setCategoria] = useState()
@@ -110,6 +112,7 @@ function GerenciarHistoria({ comoMeSintoOptions, desbravadorOptions }) {
     return (
         <main>
             {aguardando && <Loading />}
+            {!logado && <Login setLogado={setLogado}/>}
             {confirma && <Confirmar onClick={() => removerHistoria(deleteId)} setConfirma={setConfirma} titulo={"SALVAR?"}/>}
             {message && <Message type={typeMessage} msg={message} />}
             <div className="container" id="gerenciar-container">

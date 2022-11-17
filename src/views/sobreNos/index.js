@@ -32,10 +32,10 @@ function SobreNos() {
                                 <img src="./imagens/Equipe/davi.png" alt="Integrante 1" className='ml-5' />
                                 <div className='divRedes divRedesLinhaPar ml-5'>
                                     <div className='redesLinhaPar'>
-                                    <a href="https://www.linkedin.com/in/davi-de-sena-eduardo-811b92252/">
+                                    <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/davi-de-sena-eduardo-811b92252/">
                                         <i className="fa fa-linkedin" aria-hidden="true"></i>
                                     </a>
-                                    <a href='https://github.com/DaviSe2'>
+                                    <a target="_blank" rel="noopener noreferrer" href='https://github.com/DaviSe2'>
                                         <i className="fa fa-github" aria-hidden="true"></i>
                                     </a>
                                     </div>
@@ -46,12 +46,12 @@ function SobreNos() {
                             <div className="divFoto">
                                 <img src="./imagens/Equipe/greice.jpeg" alt="Integrante 1" />
                                 <div className='divRedes'>
-                                    <a href='https://www.linkedin.com/in/greici-caroline-opolenski-758422217/?originalSubdomain=br'>
+                                    <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/greici-caroline-opolenski-758422217/?originalSubdomain=br'>
                                         <i className="fa fa-linkedin" aria-hidden="true"></i>
                                     </a>
-                                    <Link to={"#"}>
+                                    <a target="_blank" rel="noopener noreferrer" href='https://github.com/GreiOpolenski'>
                                         <i className="fa fa-github" aria-hidden="true"></i>
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                             <div className="divSobreIndividual">
